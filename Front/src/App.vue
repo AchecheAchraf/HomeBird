@@ -1,11 +1,12 @@
-<template>
-  <v-app>
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
-</template>
 
 <script setup>
-  //
+  import Oiseau from'./components/Oiseau.vue' ; 
 </script>
+
+
+<template>
+  <Oiseau></Oiseau>
+</template>
+
+<style scoped>
+</style>
