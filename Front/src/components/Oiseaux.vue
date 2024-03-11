@@ -4,7 +4,7 @@ defineProps(["oiseaux"]);
 
 <template>
   <li>
-    {{ oiseaux.nom }}
+    {{oiseaux.nom}}
   </li>
       
 </template>
