@@ -1,3 +1,5 @@
+<!--
+
 <script setup>
 import { ref } from "vue";
 defineProps([oiseaux]) ; 
@@ -34,10 +36,45 @@ const id = ref("") ;
     <input id ="poids" v-model="oiseau.poids" v-bind:id="oiseau.id" v-bind:value="oiseau.nom" v-bind:tabindex="oiseau.id"></input>
 </div>
  
- <!--v-model:famille=oiseau.famille v-model:espece=oiseau.espece 
+ v-model:famille=oiseau.famille v-model:espece=oiseau.espece 
         v-model:genre= oiseau.genre v-model:taille =oiseau.taille v-model:poids =oiseau.poids>
- -->
+
  
 
 </form>
 </template>
+
+    
+-->
+
+<template>
+    <form id="formulaire">
+        <p> Couleur : Jaune </p>
+        <p>Longévité : 13 ans</p>
+        <p>Famille</p>
+        <p>Espèce</p>
+        <p>Genre</p>
+        <p>Taille</p>
+        <p>Poids</p>
+        
+    </form>
+
+    </template>
+
+    <style scoped>
+     #formulaire{
+            width: 300px;
+            margin: 0 auto; 
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+    </style>

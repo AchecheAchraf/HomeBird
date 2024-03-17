@@ -1,3 +1,4 @@
+<!-- 
 <script setup>
 import { ref } from "vue";
 defineProps([oiseaux]) ; 
@@ -40,3 +41,14 @@ const dateArrivee = ref("");
 </form>
 
 </template>
+
+-->
+
+<script setup>
+</script>
+
+<template>
+</template>
+
+<style scoped>
+</style>
