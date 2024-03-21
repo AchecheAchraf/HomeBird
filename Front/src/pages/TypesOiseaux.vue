@@ -46,6 +46,8 @@ const id = ref("") ;
 
     
 -->
+<script setup>
+</script>
 
 <template>
     <form id="formulaire">
@@ -56,9 +58,7 @@ const id = ref("") ;
         <p>Genre</p>
         <p>Taille</p>
         <p>Poids</p>
-        
     </form>
-
     </template>
 
     <style scoped>
@@ -76,5 +76,4 @@ const id = ref("") ;
             margin-bottom: 10px;
             font-weight: bold;
         }
-
     </style>
