@@ -48,7 +48,75 @@ const dateArrivee = ref("");
 </script>
 
 <template>
+<form>
+    <div class="container"> 
+        <div class="carre" >
+            <div class="background">
+                <div class= "informations">
+                <p style="font-size: 20px;"> Couleur : Jaune </p>
+                <p style="font-size: 20px;"> Longévité : 13 ans </p>
+                <p style="font-size: 20px;"> Famille : Fringillidés</p>
+                <p style="font-size: 20px;"> Espèce : Chloris </p>
+                <p style="font-size: 20px;"> Genre :  Chloris </p>
+                <p style="font-size: 20px;"> Taille : 16 cm </p>
+                <p style="font-size: 20px;"> Poids : 25 à 30 gramme</p>
+    </div>
+        </div>
+            </div>
+                </div>
+
+                <div class="carre2">
+                    <img src= './canari.jpg' alt="Image d'oiseau">
+                <div class="background2">
+                </div>
+                </div>
+</form> 
 </template>
 
 <style scoped>
+   .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Pour centrer verticalement */
+    }
+
+    .carre {
+        position: relative;
+        width: 350px; /* Ajustez la largeur selon vos besoins */
+        height: 220px; /* Ajustez la hauteur selon vos besoins */
+        background-color: #ACCB9B; /* Couleur du rectangle */
+    }
+
+    .carre2 {
+        position: relative;
+        width: 350px; /* Ajustez la largeur selon vos besoins */
+        height: 220px; /* Ajustez la hauteur selon vos besoins */
+        overflow: hidden; /* Pour cacher le dépassement de l'image */
+        border-radius: 10px; /* Optionnel : Ajouter des coins arrondis */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .background
+    .background2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent ; 
+    }
+
+
+    .informations {
+        position: relative;
+        z-index: 1; /* Assure que les informations apparaissent au-dessus du fond */
+        text-align: left ; 
+        color: black; 
+    }
 </style>
