@@ -50,8 +50,10 @@ const dateArrivee = ref("");
 <template>
 <form>
     <div class="container"> 
+        <div class="background2"></div>
         <div class="carre" >
-            <div class="background">
+            <div class="background"> 
+                <link rel="stylesheet" href="styles.css">
                 <div class= "informations">
                 <p style="font-size: 20px;"> Couleur : Jaune </p>
                 <p style="font-size: 20px;"> Longévité : 13 ans </p>
@@ -64,12 +66,8 @@ const dateArrivee = ref("");
         </div>
             </div>
                 </div>
-
-                <div class="carre2">
-                    <img src= './canari.jpg' alt="Image d'oiseau">
-                <div class="background2">
-                </div>
-                </div>
+                   
+            
 </form> 
 </template>
 
@@ -88,13 +86,7 @@ const dateArrivee = ref("");
         background-color: #ACCB9B; /* Couleur du rectangle */
     }
 
-    .carre2 {
-        position: relative;
-        width: 350px; /* Ajustez la largeur selon vos besoins */
-        height: 220px; /* Ajustez la hauteur selon vos besoins */
-        overflow: hidden; /* Pour cacher le dépassement de l'image */
-        border-radius: 10px; /* Optionnel : Ajouter des coins arrondis */
-    }
+  
 
     img {
         width: 100%;
@@ -103,15 +95,28 @@ const dateArrivee = ref("");
     }
 
     .background
-    .background2 {
+    {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: transparent ; 
+
     }
 
+    .background2
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('./canari.jpg'); /* Spécifie l'image à utiliser */
+        background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble de la fenêtre */
+        background-repeat: no-repeat;
+        z-index: -1; /* Assure que l'image est en arrière-plan */
+    }
 
     .informations {
         position: relative;
@@ -119,4 +124,6 @@ const dateArrivee = ref("");
         text-align: left ; 
         color: black; 
     }
+
+
 </style>
